@@ -95,7 +95,7 @@ try {
     await page.getByText(/not previous employment work/).waitFor();
     assert.ok(await page.locator('pre code .tok-k').count() > 10, 'syntax highlighting');
     await page.goto(BASE + '/projects/gomato-travel-booking-website/');
-    await page.getByText('Professional project · rebuilt', { exact: true }).first().waitFor();
+    await page.getByText('Client project', { exact: true }).first().waitFor();
     assert.ok(await page.getByRole('link', { name: /Live demo/ }).count() === 1);
   });
 

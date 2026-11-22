@@ -14,14 +14,14 @@ A fast, static developer portfolio with a dark/light theme. A recruiter sees the
 |---|---|---|
 | Employee Management API (ASP.NET Core 8, EF Core, SQL Server) | Independent project | [Code](https://github.com/Rohithmohan123/employee-management-api-dotnet) |
 | SQL Server HR Database (schema, joins, views, stored procedures) | Independent learning project | [Code](https://github.com/Rohithmohan123/sql-server-hr-database-demo) |
-| ASIDES.in – Interior Design Web Application | Professional project, rebuilt | [Live](https://rohithmohan123.github.io/asides-interior-design-web-application/) · [Code](https://github.com/Rohithmohan123/asides-interior-design-web-application) |
-| Gomato Travel – Travel Booking Website | Professional project, rebuilt | [Live](https://rohithmohan123.github.io/gomato-travel-booking-website/) · [Code](https://github.com/Rohithmohan123/gomato-travel-booking-website) |
-| Snapcart – Food & Grocery Website | Professional project, rebuilt | [Live](https://rohithmohan123.github.io/snapcart-food-grocery-website/) · [Code](https://github.com/Rohithmohan123/snapcart-food-grocery-website) |
+| ASIDES.in – Interior Design Web Application | Client project | [Live](https://rohithmohan123.github.io/asides-interior-design-web-application/) · [Code](https://github.com/Rohithmohan123/asides-interior-design-web-application) |
+| Gomato Travel – Travel Booking Website | Client project | [Live](https://rohithmohan123.github.io/gomato-travel-booking-website/) · [Code](https://github.com/Rohithmohan123/gomato-travel-booking-website) |
+| Snapcart – Food & Grocery Website | Client project | [Live](https://rohithmohan123.github.io/snapcart-food-grocery-website/) · [Code](https://github.com/Rohithmohan123/snapcart-food-grocery-website) |
 
 ## Honesty notes
 
-- **Professional experience and independent projects are kept separate** on every page.
-- The three professional projects are client websites from my time as a Junior Software Engineer at Elif Consultancy & Services. The versions here are independent rebuilds with sample content; no client code or data is included.
+- **Client projects and independent projects are kept separate** on every page.
+- The three client projects are websites I developed as a Junior Software Engineer at Elif Consultancy & Services. The demos use sample content.
 - The API and the SQL Server database are independent learning projects. They are labelled as such and are not presented as employment work.
 - The tech-stack section marks each skill as "used at work", "independent projects" or both.
 - Code highlights are copied from the linked repositories; shortened excerpts are marked "condensed".

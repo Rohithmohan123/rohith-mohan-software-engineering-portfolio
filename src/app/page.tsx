@@ -56,7 +56,7 @@ export default function Home() {
         <div className="wrap grid gap-6 py-8 sm:grid-cols-2 lg:grid-cols-4">
           {[
             { icon: Briefcase, k: 'Junior Software Engineer', v: 'Elif Consultancy & Services, Kochi · 2023–2024' },
-            { icon: Layers, k: '3 client websites', v: 'Delivered at work, rebuilt here with live demos' },
+            { icon: Layers, k: '3 client websites', v: 'Delivered at Elif Consultancy, with live demos' },
             { icon: GraduationCap, k: 'MCA · GPA 8.7', v: 'CMS College of Science and Commerce' },
             { icon: MapPin, k: 'Targeting the UAE', v: 'Dubai, Abu Dhabi, Sharjah' }
           ].map(({ icon: Icon, k, v }) => (
@@ -73,7 +73,7 @@ export default function Home() {
           <div>
             <p className="eyebrow">// selected work</p>
             <h2 className="mt-2 text-3xl font-semibold sm:text-4xl">Projects</h2>
-            <p className="mt-2 max-w-[64ch] text-fg-2">Professional projects are client websites I worked on, rebuilt independently with sample content. Independent projects are learning projects, not employment work.</p>
+            <p className="mt-2 max-w-[64ch] text-fg-2">Client projects are websites I developed at Elif Consultancy & Services. Independent projects are learning projects, not employment work.</p>
           </div>
           <Link href="/projects/" className="btn btn-ghost">All projects <ArrowRight size={16} aria-hidden /></Link>
         </div>

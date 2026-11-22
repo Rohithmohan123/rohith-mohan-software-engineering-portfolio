@@ -30,7 +30,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <p className="wrap border-t border-line py-5 text-xs text-muted">© {new Date().getFullYear()} {site.name}. Professional projects are independent rebuilds of client work with sample content; independent projects are labelled as such.</p>
+      <p className="wrap border-t border-line py-5 text-xs text-muted">© {new Date().getFullYear()} {site.name}. Client projects were developed at Elif Consultancy & Services; independent projects are labelled as such.</p>
     </footer>
   );
 }

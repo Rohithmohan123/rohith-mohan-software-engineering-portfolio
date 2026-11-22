@@ -1,12 +1,11 @@
-// Project case studies. "Professional" projects are client websites originally delivered during
-// employment and rebuilt independently for this portfolio (no client code or data). "Independent"
-// projects were created from scratch to practise and demonstrate skills.
+// Project case studies. "Client" projects are websites developed at Elif Consultancy & Services.
+// "Independent" projects were created from scratch to practise and demonstrate skills.
 
 export type Snippet = { title: string; lang: 'csharp' | 'sql' | 'ts' | 'js'; file: string; code: string };
 export type Project = {
   slug: string;
   title: string;
-  kind: 'Professional project · rebuilt' | 'Independent project';
+  kind: 'Client project' | 'Independent project';
   tagline: string;
   origin: string;
   problem: string;
@@ -31,9 +30,9 @@ export const projects: Project[] = [
   {
     slug: 'asides-interior-design-web-app',
     title: 'ASIDES.in – Interior Design Web Application',
-    kind: 'Professional project · rebuilt',
+    kind: 'Client project',
     tagline: 'Single-page interior design site with project categories, listings, detail pages, enquiries and a CMS-style admin area.',
-    origin: 'Original background: I developed an interior design single-page web application. This public version is an independent rebuild with fictional content; it contains no client code or data.',
+    origin: 'Client project: interior design single-page web application I developed at Elif Consultancy & Services. The demo uses sample content.',
     problem: 'An interior design studio needed a fast portfolio site that shows its work by category, lets visitors send enquiries, and lets staff manage projects without touching code.',
     approach: [
       'Single-page app with routes for home, projects, project detail, services, contact and admin.',
@@ -75,9 +74,9 @@ export const projects: Project[] = [
   {
     slug: 'gomato-travel-booking-website',
     title: 'Gomato Travel – Travel Booking Website',
-    kind: 'Professional project · rebuilt',
+    kind: 'Client project',
     tagline: 'Travel booking front end with destination listings, search, filters, package details and a booking enquiry flow.',
-    origin: 'Original background: client website delivered at Elif Consultancy & Services. This public version is an independent rebuild with sample packages and prices.',
+    origin: 'Client project: website I developed at Elif Consultancy & Services. The demo uses sample packages and prices.',
     problem: 'A travel agency needed a fast, mobile-friendly site where visitors can find a package, compare options and send a booking enquiry without calling.',
     approach: [
       'Plain HTML, CSS and JavaScript (ES modules) with hash routing, so it hosts anywhere.',
@@ -122,9 +121,9 @@ export const projects: Project[] = [
   {
     slug: 'snapcart-food-grocery-website',
     title: 'Snapcart – Food & Grocery Website',
-    kind: 'Professional project · rebuilt',
+    kind: 'Client project',
     tagline: 'Online grocery store with a product catalogue, categories, search and filters, cart with quantities, coupon and checkout.',
-    origin: 'Original background: client website delivered at Elif Consultancy & Services. This public version is an independent rebuild with sample products and prices.',
+    origin: 'Client project: website I developed at Elif Consultancy & Services. The demo uses sample products and prices.',
     problem: 'A local grocery business needed an easy online catalogue where customers can find products quickly, manage a cart and place an order for a delivery slot.',
     approach: [
       'Cart logic written as pure, unit-tested functions (totals, savings, coupon, delivery fee).',
