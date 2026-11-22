@@ -1,0 +1,30 @@
+{
+  "name": "rohith-mohan-software-engineering-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website of Rohith Mohan, Junior Software Engineer (.NET / C#, frontend and web development).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "npx serve out",
+    "pdfs": "node scripts/build-pdfs.mjs",
+    "test": "node tests/e2e.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^1.77.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "playwright-core": "^1.65.1",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^5.9.3"
+  },
+  "private": true
+}
