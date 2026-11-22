@@ -60,7 +60,7 @@ try {
     const h1 = await page.locator('h1').innerText();
     assert.match(h1, /Rohith Mohan/);
     assert.match(h1, /Junior Software Engineer/);
-    assert.match(await page.locator('main').innerText(), /\.NET \/ C#/);
+    assert.match(await page.locator('main').innerText(), /Angular · TypeScript/);
     assert.ok(await page.getByRole('link', { name: /Download CV/ }).first().isVisible());
   });
 

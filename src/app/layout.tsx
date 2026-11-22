@@ -6,11 +6,11 @@ import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: `${site.name} · ${site.title} (.NET / C#, Web)`, template: `%s · ${site.name}` },
-  description: 'Junior Software Engineer building web applications with C#, ASP.NET Core, SQL Server, TypeScript, HTML and CSS. Open to roles in Dubai and across the UAE.',
-  keywords: ['Junior Software Engineer', 'Junior .NET Developer', 'C# Developer', 'ASP.NET Core', 'SQL Server', 'Frontend Developer', 'Web Developer', 'Dubai', 'UAE', 'Rohith Mohan'],
+  title: { default: `${site.name} · ${site.title} (Frontend & Web)`, template: `%s · ${site.name}` },
+  description: 'Junior Software Engineer building responsive web applications with Angular, TypeScript, HTML, CSS, REST APIs and SQL. Open to roles in Dubai and across the UAE.',
+  keywords: ['Junior Software Engineer', 'Angular', 'TypeScript', 'SQL', 'Frontend Developer', 'Web Developer', 'Dubai', 'UAE', 'Rohith Mohan'],
   authors: [{ name: site.name }],
-  openGraph: { type: 'website', title: `${site.name} · ${site.title}`, description: '.NET / C#, SQL Server and frontend projects with code, case studies and live demos.', url: site.url, siteName: `${site.name} · Software portfolio` },
+  openGraph: { images: [{ url: `${site.url}/og/home.jpg`, width: 1200, height: 630 }], type: 'website', title: `${site.name} · ${site.title}`, description: 'Client websites and web projects with code, case studies and live demos.', url: site.url, siteName: `${site.name} · Software portfolio` },
   twitter: { card: 'summary', title: `${site.name} · ${site.title}` },
   robots: { index: true, follow: true },
   icons: { icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}/favicon.svg` }

@@ -5,13 +5,13 @@ import { ArrowLeft, ArrowRight, CheckCircle2, ExternalLink, Info } from 'lucide-
 import { GithubIcon } from '@/components/BrandIcons';
 import { Code } from '@/components/Code';
 import { getProject, projects } from '@/data/projects';
-import { asset } from '@/lib/site';
+import { asset, site } from '@/lib/site';
 
 export function generateStaticParams() { return projects.map((p) => ({ slug: p.slug })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const p = getProject((await params).slug);
-  return p ? { title: p.title, description: p.tagline } : {};
+  return p ? { title: p.title, description: p.tagline, openGraph: { type: 'article', title: `${p.title} · ${site.name}`, description: p.tagline, url: `${site.url}/projects/${p.slug}/`, images: [{ url: `${site.url}/og/${p.slug}.jpg`, width: 1200, height: 630, alt: p.title }] }, twitter: { card: 'summary_large_image' } } : {};
 }
 
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {

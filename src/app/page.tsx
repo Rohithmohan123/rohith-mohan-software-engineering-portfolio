@@ -7,16 +7,19 @@ import { projects } from '@/data/projects';
 import { asset, education, experience, site, stack, targetRoles } from '@/lib/site';
 
 const heroSnippet = {
-  title: 'Create endpoint', lang: 'csharp' as const, file: 'Controllers/EmployeesController.cs (condensed)',
-  code: `[HttpPost]
-[ProducesResponseType<EmployeeDto>(201)]
-[ProducesResponseType<ProblemDetails>(409)]
-public async Task<ActionResult<EmployeeDto>> Create(
-    EmployeeRequest request, CancellationToken ct)
-{
-    var created = await employees.CreateAsync(request, ct);
-    return CreatedAtAction(nameof(Get),
-        new { id = created.Id }, created);
+  title: 'Enquiry form (Angular)', lang: 'ts' as const, file: 'ASIDES.in · shared/enquiry-form.ts (condensed)',
+  code: `submit(): void {
+  if (this.form.invalid) {
+    this.form.markAllAsTouched();
+    return;
+  }
+  this.sending.set(true);
+  this.api.sendEnquiry(this.form.getRawValue())
+    .subscribe({
+      next: () => this.sent.set(true),
+      error: (err: HttpErrorResponse) =>
+        this.showServerErrors(err)
+    });
 }`
 };
 
@@ -35,9 +38,9 @@ export default function Home() {
               Rohith Mohan
               <span className="mt-2 block text-accent">Junior Software Engineer</span>
             </h1>
-            <p className="mt-3 font-mono text-[15px] text-fg-2">.NET / C# · SQL Server · Frontend & Web</p>
+            <p className="mt-3 font-mono text-[15px] text-fg-2">Angular · TypeScript · SQL · Frontend & Web</p>
             <p className="mt-6 max-w-[58ch] text-lg leading-relaxed text-fg-2">
-              I build web applications with C#, ASP.NET Core and SQL Server, and responsive front ends with TypeScript, HTML and CSS. I delivered client websites as a Junior Software Engineer Trainee and continue to build complete .NET projects with tests and documentation.
+              I build responsive web front ends with Angular, TypeScript, HTML and CSS, connect them to REST APIs and design relational databases. As a Junior Software Engineer at Elif Consultancy & Services I delivered three client websites with designers and backend developers.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link href="/projects/" className="btn btn-primary">View projects <ArrowRight size={18} aria-hidden /></Link>
@@ -52,7 +55,7 @@ export default function Home() {
       <section className="border-b border-line">
         <div className="wrap grid gap-6 py-8 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            { icon: Briefcase, k: 'Junior SE Trainee', v: 'Ezses Company, Kochi · 2023–2024' },
+            { icon: Briefcase, k: 'Junior Software Engineer', v: 'Elif Consultancy & Services, Kochi · 2023–2024' },
             { icon: Layers, k: '3 client websites', v: 'Delivered at work, rebuilt here with live demos' },
             { icon: GraduationCap, k: 'MCA · GPA 8.7', v: 'CMS College of Science and Commerce' },
             { icon: MapPin, k: 'Targeting the UAE', v: 'Dubai, Abu Dhabi, Sharjah' }
@@ -70,7 +73,7 @@ export default function Home() {
           <div>
             <p className="eyebrow">// selected work</p>
             <h2 className="mt-2 text-3xl font-semibold sm:text-4xl">Projects</h2>
-            <p className="mt-2 max-w-[64ch] text-fg-2">Professional projects are client websites I worked on, rebuilt independently with sample content. Independent projects were built from scratch to demonstrate .NET and SQL Server skills.</p>
+            <p className="mt-2 max-w-[64ch] text-fg-2">Professional projects are client websites I worked on, rebuilt independently with sample content. Independent projects are learning projects, not employment work.</p>
           </div>
           <Link href="/projects/" className="btn btn-ghost">All projects <ArrowRight size={16} aria-hidden /></Link>
         </div>
@@ -123,7 +126,7 @@ export default function Home() {
         <div className="space-y-8">
           <div>
             <h3 className="font-semibold">Education</h3>
-            <ul className="mt-3 space-y-3">{education.map((e) => <li key={e.degree} className="card p-4"><p className="font-medium">{e.degree} · <span className="text-accent">{e.grade}</span></p><p className="text-sm text-muted">{e.school} · {e.period}</p></li>)}</ul>
+            <ul className="mt-3 space-y-3">{education.map((e) => <li key={e.degree} className="card p-4"><p className="font-medium">{e.degree}{e.grade && <> · <span className="text-accent">{e.grade}</span></>}</p><p className="text-sm text-muted">{e.school} · {e.period}</p></li>)}</ul>
           </div>
           <div>
             <h3 className="font-semibold">Roles I am targeting</h3>
@@ -136,7 +139,7 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-between gap-6 rounded-3xl border border-accent/40 bg-accent-soft px-8 py-12 sm:px-12">
           <div>
             <h2 className="text-3xl font-semibold">Hiring a junior developer?</h2>
-            <p className="mt-2 max-w-[52ch] text-fg-2">I am available immediately for .NET, web and frontend roles in Dubai, Abu Dhabi and Sharjah.</p>
+            <p className="mt-2 max-w-[52ch] text-fg-2">I am available immediately for junior software, frontend and web developer roles in Dubai, Abu Dhabi and Sharjah.</p>
           </div>
           <div className="flex flex-wrap gap-3">
             <Link href="/contact/" className="btn btn-primary">Get in touch</Link>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { ProjectCard } from '@/components/ProjectCard';
 import { projects } from '@/data/projects';
 
-export const metadata: Metadata = { title: 'Projects', description: '.NET / C# API, SQL Server database and three rebuilt client websites, each with code, case study and links.' };
+export const metadata: Metadata = { title: 'Projects', description: 'Three rebuilt client websites and two independent learning projects (an API and a SQL Server database), each with code, case study and links.' };
 
 export default function ProjectsPage() {
   return (

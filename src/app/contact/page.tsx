@@ -6,7 +6,7 @@ import { asset, site } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Contact',
-  description: 'Contact Rohith Mohan about junior .NET, software engineering and web development roles in the UAE.'
+  description: 'Contact Rohith Mohan about junior software engineering, frontend and web development roles in the UAE.'
 };
 
 export default function ContactPage() {
@@ -15,7 +15,7 @@ export default function ContactPage() {
       <div>
         <p className="eyebrow">// contact</p>
         <h1 className="mt-2 text-4xl font-bold sm:text-5xl">Let’s build something together</h1>
-        <p className="mt-4 max-w-[52ch] text-lg text-ink-2">I am looking for junior .NET, software engineering, frontend and web development roles in the UAE and can start immediately.</p>
+        <p className="mt-4 max-w-[52ch] text-lg text-ink-2">I am looking for junior software engineering, frontend and web development roles in the UAE and can start immediately.</p>
         <ul className="mt-8 space-y-4">
           <li className="flex items-center gap-3"><span className="grid h-10 w-10 place-items-center rounded-lg bg-accent-soft text-accent"><MapPin size={18} aria-hidden /></span>{site.location}</li>
           {site.email && <li className="flex items-center gap-3"><span className="grid h-10 w-10 place-items-center rounded-lg bg-accent-soft text-accent"><Mail size={18} aria-hidden /></span><a href={`mailto:${site.email}`} className="font-medium hover:text-accent">{site.email}</a></li>}

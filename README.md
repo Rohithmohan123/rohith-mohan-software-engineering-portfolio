@@ -1,6 +1,6 @@
 # Rohith Mohan – Software Engineering Portfolio
 
-Portfolio website for **Rohith Mohan, Junior Software Engineer** (.NET / C#, SQL Server, frontend and web development), targeting roles in Dubai, Abu Dhabi and Sharjah.
+Portfolio website for **Rohith Mohan, Junior Software Engineer** (frontend and web development: Angular, TypeScript, HTML/CSS, REST APIs and SQL), targeting roles in Dubai, Abu Dhabi and Sharjah.
 
 **Live site:** https://rohithmohan123.github.io/rohith-mohan-software-engineering-portfolio/
 
@@ -21,8 +21,8 @@ A fast, static developer portfolio with a dark/light theme. A recruiter sees the
 ## Honesty notes
 
 - **Professional experience and independent projects are kept separate** on every page.
-- The three professional projects are client websites from my time as a Junior Software Engineer Trainee. The versions here are independent rebuilds with sample content; no client code or data is included.
-- The .NET API and the SQL Server database were built independently to demonstrate those skills. They are labelled as such and are not presented as employment work.
+- The three professional projects are client websites from my time as a Junior Software Engineer at Elif Consultancy & Services. The versions here are independent rebuilds with sample content; no client code or data is included.
+- The API and the SQL Server database are independent learning projects. They are labelled as such and are not presented as employment work.
 - The tech-stack section marks each skill as "used at work", "independent projects" or both.
 - Code highlights are copied from the linked repositories; shortened excerpts are marked "condensed".
 

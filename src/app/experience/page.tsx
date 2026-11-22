@@ -34,14 +34,14 @@ export default function ExperiencePage() {
           </ol>
           <div className="card mt-10 p-5 text-sm text-fg-2">
             <p className="font-semibold text-fg">Independent projects</p>
-            <p className="mt-1">The Employee Management API (C#, ASP.NET Core, EF Core, SQL Server) and the SQL Server HR database were built independently to demonstrate .NET and database skills. They are not employment work.</p>
+            <p className="mt-1">The Employee Management API and the SQL Server HR database are independent learning projects. They are not employment work.</p>
           </div>
         </div>
         <div className="space-y-10">
           <div>
             <h2 className="flex items-center gap-2 text-2xl font-semibold"><GraduationCap size={24} className="text-accent" aria-hidden /> Education</h2>
             <ul className="mt-6 space-y-4">{education.map((ed) => (
-              <li key={ed.degree} className="card p-5"><p className="font-mono text-sm text-muted">{ed.period}</p><h3 className="mt-1 font-semibold">{ed.degree}</h3><p className="text-fg-2">{ed.school}</p><p className="mt-2 inline-block rounded-md bg-accent-soft px-2 py-0.5 text-sm font-semibold text-accent">{ed.grade}</p></li>
+              <li key={ed.degree} className="card p-5"><p className="font-mono text-sm text-muted">{ed.period}</p><h3 className="mt-1 font-semibold">{ed.degree}</h3><p className="text-fg-2">{ed.school}</p>{ed.grade && <p className="mt-2 inline-block rounded-md bg-accent-soft px-2 py-0.5 text-sm font-semibold text-accent">{ed.grade}</p>}</li>
             ))}</ul>
           </div>
           <div>

@@ -8,10 +8,10 @@ import { projects } from '../src/data/projects.ts';
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const contact = [site.location.replace('Open to roles in ', ''), site.email, site.github.replace('https://', ''), site.linkedin.replace('https://www.', ''), site.url.replace('https://', '')].filter(Boolean);
 const skills = {
-  'Languages & frameworks': ['C#', '.NET 8 / ASP.NET Core Web API', 'Entity Framework Core', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3 / SCSS', 'Angular'],
-  'Data': ['SQL Server & T-SQL', 'MySQL', 'Database design (ER modelling)', 'CRUD operations'],
-  'APIs & testing': ['REST APIs', 'Postman', 'xUnit integration tests', 'Playwright browser tests'],
-  'Tools': ['Git & GitHub', 'GitHub Actions', 'Responsive web design', 'CMS-style admin panels']
+  'Frontend': ['Angular', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3 / SCSS', 'PrimeNG', 'Responsive web design'],
+  'Data': ['SQL', 'MySQL', 'Database design (ER modelling)', 'CRUD operations', 'SQL Server (independent project)'],
+  'APIs & testing': ['REST APIs', 'Postman (API testing)'],
+  'Tools': ['Git & GitHub', 'Inkscape (SVG icons)', 'CMS-style admin panels']
 };
 const html = `<!doctype html><html><head><meta charset="utf-8"><title>${site.name} – CV</title><style>
   @page { size: A4; margin: 15mm 16mm 17mm; }
@@ -25,7 +25,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><title>${site.nam
 </style></head><body>
   <div class="head"><h1>${esc(site.name)}</h1><div class="title">${esc(site.positioning)}</div><div class="contact">${contact.map(esc).join(' &nbsp;|&nbsp; ')}</div></div>
   <h2>Profile</h2>
-  <p>Junior software engineer with hands-on experience delivering client websites as a Junior Software Engineer Trainee (Aug 2023 – Jun 2024): building responsive front ends, designing relational database schemas and validating REST APIs. I build complete .NET projects with C#, ASP.NET Core, Entity Framework Core and SQL Server, including tests and documentation. MCA (GPA 8.7). Available immediately for roles in Dubai, Abu Dhabi and Sharjah.</p>
+  <p>Junior Software Engineer with full-time experience at Elif Consultancy & Services (Aug 2023 – May 2024), delivering three client websites with designers and backend developers: building responsive Angular and TypeScript front ends, integrating REST APIs, testing endpoints in Postman and designing MySQL database schemas. MCA (GPA 8.7). Available immediately for roles in Dubai, Abu Dhabi and Sharjah.</p>
   <h2>Technical skills</h2>
   <table>${Object.entries(skills).map(([k, v]) => `<tr><td>${esc(k)}</td><td>${v.map(esc).join(', ')}</td></tr>`).join('')}</table>
   <h2>Professional experience</h2>
@@ -34,7 +34,7 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><title>${site.nam
   <ul>${projects.map((p) => `<li><b>${esc(p.title)}</b> <span class="tag">[${esc(p.kind)}]</span> – ${esc(p.tagline)} <span class="muted">${esc(p.stack.slice(0, 5).join(', '))}</span></li>`).join('')}</ul>
   <p class="muted" style="margin-top:5px">Code and case studies: ${esc(site.url.replace('https://', ''))} · ${esc(site.github.replace('https://', ''))}</p>
   <h2>Education</h2>
-  ${education.map((ed) => `<div class="row"><span><b>${esc(ed.degree)}</b>, ${esc(ed.school)} – ${esc(ed.grade)}</span><span class="muted">${esc(ed.period)}</span></div>`).join('')}
+  ${education.map((ed) => `<div class="row"><span><b>${esc(ed.degree)}</b>, ${esc(ed.school)}${ed.grade ? ' – ' + esc(ed.grade) : ''}</span><span class="muted">${esc(ed.period)}</span></div>`).join('')}
   <h2>Certifications</h2>
   <ul>${certifications.map((c) => `<li>${esc(c.name)} – ${esc(c.issuer)}</li>`).join('')}</ul>
 </body></html>`;
