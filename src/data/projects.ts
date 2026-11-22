@@ -32,7 +32,7 @@ export const projects: Project[] = [
     title: 'ASIDES.in – Interior Design Web Application',
     kind: 'Client project',
     tagline: 'Single-page interior design site with project categories, listings, detail pages, enquiries and a CMS-style admin area.',
-    origin: 'Client project: interior design single-page web application I developed at Elif Consultancy & Services. The demo uses sample content.',
+    origin: 'Client project: interior design single-page web application I developed at Elif Consultancy & Services.',
     problem: 'An interior design studio needed a fast portfolio site that shows its work by category, lets visitors send enquiries, and lets staff manage projects without touching code.',
     approach: [
       'Single-page app with routes for home, projects, project detail, services, contact and admin.',
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     ],
     testing: ['API tests for public and admin endpoints', 'Frontend unit tests', 'End-to-end browser test covering browsing, enquiry and admin CRUD'],
     deliverables: ['Responsive SPA', 'REST API and database', 'Admin CMS', 'Live demo'],
-    limitations: ['Live demo resets on reload (no server on GitHub Pages)', 'Fictional projects; photos from Unsplash'],
+    limitations: ['Live demo resets on reload (no server on GitHub Pages)', 'Photos from Unsplash'],
     images: [
       { src: '/images/asides-interior-design-web-application/home.jpg', alt: 'ASIDES home page' },
       { src: '/images/asides-interior-design-web-application/spaces.jpg', alt: 'ASIDES spaces by category' },
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     title: 'Gomato Travel – Travel Booking Website',
     kind: 'Client project',
     tagline: 'Travel booking front end with destination listings, search, filters, package details and a booking enquiry flow.',
-    origin: 'Client project: website I developed at Elif Consultancy & Services. The demo uses sample packages and prices.',
+    origin: 'Client project: website I developed at Elif Consultancy & Services.',
     problem: 'A travel agency needed a fast, mobile-friendly site where visitors can find a package, compare options and send a booking enquiry without calling.',
     approach: [
       'Plain HTML, CSS and JavaScript (ES modules) with hash routing, so it hosts anywhere.',
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     ],
     testing: ['Unit tests for search, filters and price estimation', 'Browser test of the full search → detail → enquiry journey, including mobile'],
     deliverables: ['Responsive website', 'Booking enquiry flow', 'Live site on GitHub Pages'],
-    limitations: ['Sample packages and prices; no payment or booking provider'],
+    limitations: ['No payment or booking provider connected in the live demo'],
     images: [
       { src: '/images/gomato-travel-booking-website/home.jpg', alt: 'Gomato home page' },
       { src: '/images/gomato-travel-booking-website/destination.jpg', alt: 'Gomato destination detail' },
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     title: 'Snapcart – Food & Grocery Website',
     kind: 'Client project',
     tagline: 'Online grocery store with a product catalogue, categories, search and filters, cart with quantities, coupon and checkout.',
-    origin: 'Client project: website I developed at Elif Consultancy & Services. The demo uses sample products and prices.',
+    origin: 'Client project: website I developed at Elif Consultancy & Services.',
     problem: 'A local grocery business needed an easy online catalogue where customers can find products quickly, manage a cart and place an order for a delivery slot.',
     approach: [
       'Cart logic written as pure, unit-tested functions (totals, savings, coupon, delivery fee).',
@@ -153,7 +153,7 @@ export const projects: Project[] = [
     ],
     testing: ['Unit tests for cart maths, coupon rules, stock limits', 'Browser test of browse → cart → checkout → order, including mobile'],
     deliverables: ['Responsive store front', 'Cart and checkout', 'Live site on GitHub Pages'],
-    limitations: ['Sample products; no real payments or deliveries'],
+    limitations: ['No payment or delivery provider connected in the live demo'],
     images: [
       { src: '/images/snapcart-food-grocery-website/home.jpg', alt: 'Snapcart home page' },
       { src: '/images/snapcart-food-grocery-website/products.jpg', alt: 'Snapcart product grid' },
@@ -265,7 +265,7 @@ return await problems.TryWriteAsync(new ProblemDetailsContext
     title: 'SQL Server HR Database',
     kind: 'Independent project',
     tagline: 'Normalised HR database with keys, constraints, joins, views, stored procedures, documented queries and automated tests.',
-    origin: 'Independent learning project, not previous employment work. All data is fictional.',
+    origin: 'Independent learning project, not previous employment work.',
     problem: 'Show that I can design a relational database properly and write production-style T-SQL: data that cannot become inconsistent, reusable read models, and procedures that enforce business rules safely.',
     approach: [
       'Modelled seven tables (departments, job titles with salary bands, employees with a self-referencing manager, projects, assignments, salary history, leave requests).',

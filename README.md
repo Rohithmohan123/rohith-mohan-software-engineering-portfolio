@@ -21,7 +21,7 @@ A fast, static developer portfolio with a dark/light theme. A recruiter sees the
 ## Honesty notes
 
 - **Client projects and independent projects are kept separate** on every page.
-- The three client projects are websites I developed as a Junior Software Engineer at Elif Consultancy & Services. The demos use sample content.
+- The three client projects are websites I developed as a Junior Software Engineer at Elif Consultancy & Services.
 - The API and the SQL Server database are independent learning projects. They are labelled as such and are not presented as employment work.
 - The tech-stack section marks each skill as "used at work", "independent projects" or both.
 - Code highlights are copied from the linked repositories; shortened excerpts are marked "condensed".
