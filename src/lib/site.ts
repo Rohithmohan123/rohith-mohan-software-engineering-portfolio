@@ -6,7 +6,7 @@ export const site = {
   positioning: 'Junior Software Engineer | .NET / C# Developer | Frontend & Web Developer',
   location: 'Open to roles in Dubai, Abu Dhabi and Sharjah, UAE',
   availability: 'Available to start immediately',
-  email: '', // set to show an email address; otherwise the contact form uses LinkedIn
+  email: 'rohithmohan450@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rohith-mohan-analyst',
   github: 'https://github.com/Rohithmohan123',
   cv: '/cv/Rohith-Mohan-Software-Engineer-CV.pdf',
